@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html lang = "en" >
+<head >
+ <meta charset = "UTF-8" >
+ <meta name = "viewport" content = "width=device-width,initial-scale=1.0" >
+ <meta http-equiv = "X-UA-Compatiple" content = "ie=edge" >
+ <title > GUIA N°8 </title >
+</head >
+<body >
+ <fieldset >
+ <legend > <h1 > Generar y desplegar N números que tengan la forma siguiente: 1,2,2,3,3,3,4,4,4,4,5,5,5,5,...</h1></legend >
+ <label for = "" > <h2> Digite un numero: </h2></label >
+ <input type = "text" id = "Numero" >
+ <br ><br>
+ <input type = "button" onclick = " arreglo();" value = "operar" >
+ </fieldset >
+</body >
+ <script type = "text/javascript" >
+ function arreglo () { 
+ var numero = document . getElementById ( 'Numero' ). value ;
+ var rep ;
+ var arreglo = [];
+ for ( var i = 1 ; i <= numero ; i ++) {
+    for ( rep = 1 ; rep <= i ; rep ++) {
+        arreglo[arreglo.length] = i;
+    }
+}
+    document.write (arreglo);
+ }
+</script>
+</html> 
